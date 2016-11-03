@@ -1,12 +1,13 @@
 Runs an [Exhibitor](https://github.com/Netflix/exhibitor)-managed [ZooKeeper](http://zookeeper.apache.org/) instance using S3 for backups and automatic node discovery.
 
-Available on the Docker Index as [mbabineau/zookeeper-exhibitor](https://index.docker.io/u/mbabineau/zookeeper-exhibitor/):
+Available on the Docker Index as [wittman/zookeeper-exhibitor](https://index.docker.io/u/wittman/zookeeper-exhibitor/):
 
-    docker pull mbabineau/zookeeper-exhibitor
+    docker pull wittman/zookeeper-exhibitor
 
 ### Versions
-* Exhibitor 1.5.5
-* ZooKeeper 3.4.6
+* Exhibitor 1.5.6
+* ZooKeeper 3.4.9
+* Alpine 3.4
 
 ### Usage
 The container expects the following environment variables to be passed in:
@@ -33,7 +34,7 @@ Starting the container:
         -e AWS_ACCESS_KEY_ID=<access_key> \
         -e AWS_SECRET_ACCESS_KEY=<secret_key> \
         -e HOSTNAME=<host> \
-        mbabineau/zookeeper-exhibitor:latest
+        wittman/zookeeper-exhibitor:latest
 
 Once the container is up, confirm Exhibitor is running:
 
