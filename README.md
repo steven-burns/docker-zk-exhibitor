@@ -1,8 +1,8 @@
 Runs an [Exhibitor](https://github.com/Netflix/exhibitor)-managed [ZooKeeper](http://zookeeper.apache.org/) instance using S3 for backups and automatic node discovery.
 
-Available on the Docker Index as [wittman/zookeeper-exhibitor](https://index.docker.io/u/wittman/zookeeper-exhibitor/):
+Available on the Docker Index as [stevenburns/zookeeper-exhibitor](https://index.docker.io/u/stevenburns/zookeeper-exhibitor/):
 
-    docker pull wittman/zookeeper-exhibitor
+    docker pull stevenburns/zookeeper-exhibitor
 
 ### Versions
 * Exhibitor 1.5.6
@@ -34,7 +34,7 @@ Starting the container:
         -e AWS_ACCESS_KEY_ID=<access_key> \
         -e AWS_SECRET_ACCESS_KEY=<secret_key> \
         -e HOSTNAME=<host> \
-        wittman/zookeeper-exhibitor:latest
+        stevenburns/zookeeper-exhibitor:latest
 
 Once the container is up, confirm Exhibitor is running:
 
@@ -92,4 +92,4 @@ Starting the container:
         -e S3_BUCKET=<bucket> \
         -e S3_PREFIX=<key_prefix> \
         -e HOSTNAME=<host> \
-        wittman/zookeeper-exhibitor:latest
+        stevenburns/zookeeper-exhibitor:latest
