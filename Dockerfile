@@ -1,5 +1,5 @@
 FROM alpine:3.5
-MAINTAINER Steven A Burns sburns02@gmail.com
+MAINTAINER Mike Babineau michael.babineau@gmail.com
 
 ARG ZK_VERSION="3.4.10"
 ARG EXHIBITOR_VERSION="1.5.6"
