@@ -6,8 +6,8 @@ Available on the Docker Index as [wittman/zookeeper-exhibitor](https://index.doc
 
 ### Versions
 * Exhibitor 1.5.6
-* ZooKeeper 3.4.9
-* Alpine 3.4
+* ZooKeeper 3.4.10
+* Alpine 3.5
 
 ### Usage
 The container expects the following environment variables to be passed in:
@@ -92,4 +92,4 @@ Starting the container:
         -e S3_BUCKET=<bucket> \
         -e S3_PREFIX=<key_prefix> \
         -e HOSTNAME=<host> \
-        mbabineau/zookeeper-exhibitor:latest
+        wittman/zookeeper-exhibitor:latest

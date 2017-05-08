@@ -1,9 +1,9 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER Mike Babineau michael.babineau@gmail.com
 
-ARG ZK_VERSION="3.4.9"
+ARG ZK_VERSION="3.4.10"
 ARG EXHIBITOR_VERSION="1.5.6"
-ARG MAVEN_VERSION="3.3.9"
+ARG MAVEN_VERSION="3.5.0"
 
 ENV \
     MAVEN_HOME="/usr/share/maven" \
